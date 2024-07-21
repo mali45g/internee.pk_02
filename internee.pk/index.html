@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Muhammad Rehan</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Service One</a></li>
+                            <li><a href="#">Service Two</a></li>
+                            <li><a href="#">Service Three</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('https://via.placeholder.com/1200x400');"></div>
+                <div class="slide" style="background-image: url('https://via.placeholder.com/1200x400');"></div>
+                <div class="slide" style="background-image: url('https://via.placeholder.com/1200x400');"></div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        
+        <section class="hero-section">
+            <h1>Welcome to Our Service Website</h1>
+            <button onclick="loadContent()">Load More</button>
+            <div id="dynamic-content"></div>
+        </section>
+        <section class="services-overview">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <p>Service 1: Detailed description of Service 1.</p>
+            </div>
+            <div class="service-item">
+                <p>Service 2: Detailed description of Service 2.</p>
+            </div>
+            <div class="service-item">
+                <p>Service 3: Detailed description of Service 3.</p>
+            </div>
+            
+        </section>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-item">
+                <p>"Great service!" - Client 1</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Highly recommend!" - Client 2</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Excellent experience!" - Client 3</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Muhammad Rehan. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
